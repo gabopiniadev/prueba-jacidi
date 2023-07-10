@@ -1,0 +1,4 @@
+FROM openjdk:11-jdk-alpine
+EXPOSE 8585
+ADD target/backend.jar backend.jar 
+ENTRYPOINT ["java", "-jar", "backend.jar"]
